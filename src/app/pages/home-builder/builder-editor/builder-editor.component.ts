@@ -503,6 +503,22 @@ export class BuilderEditorComponent implements OnInit {
             content: '<div data-gjs-type="text">Insert your text here</div>',
           },
           {
+            id: 'h1',
+            label: '<i class="fas editor-icon-size fa-font"></i><br> H1',
+            content: '<h1>Insert your text here</h1>',
+          },
+          {
+            id: 'h2',
+            label: '<i class="fas editor-icon-size fa-font"></i><br> H2',
+            content: '<h2>Insert your text here</h2>',
+          },
+          {
+            id: 'h3',
+            label: '<i class="fas editor-icon-size fa-font"></i><br> H3',
+            content: '<h3>Insert your text here</h3>',
+          },
+          
+          {
             id: 'image',
             label: '<i class="fas editor-icon-size fa-image"></i><br> Image',
             // Select the component once it's dropped
@@ -524,6 +540,12 @@ export class BuilderEditorComponent implements OnInit {
             label: '<i class="fas editor-icon-size fa-columns"></i><br> 3 Columns',
             content: '<div class="row" ><div class="col-12 col-sm-4"><p>1</p></div><div class="col-12 col-sm-4"><p>2</p></div><div class="col-12 col-sm-4"><p>2</p></div></div>',
           },
+          {
+            id: '4 column',
+            attributes: { class: 'gjs-block-section' },
+            label: '<i class="fas editor-icon-size fa-columns"></i><br> 4 Columns',
+            content: '<div class="row" ><div class="col-12 col-sm-3"><p>1</p></div><div class="col-12 col-sm-3"><p>2</p></div><div class="col-12 col-sm-3"><p>3</p></div><div class="col-12 col-sm-3"><p>4</p></div></div>',
+          },
  
           {
             id: 'container',
@@ -531,7 +553,7 @@ export class BuilderEditorComponent implements OnInit {
             label: '<i class="fas editor-icon-size fa-columns"></i><br> Container',
             content: '<div class="container" ><p>content goes here</p></div>',
           },
-          
+
  
           {
             id: 'list',
